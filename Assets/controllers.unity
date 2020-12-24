@@ -851,13 +851,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a171dfce9023e475e9b9d9d5f4341f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 2
+  walkSpeed: 4
   runSpeed: 6
   gravity: -12
-  jumpHeight: 1
+  jumpHeight: 15
   airControlPercent: 0
-  turnSmoothTime: 0.2
-  speedSmoothTime: 0.1
+  turnSmoothTime: 0.02
+  speedSmoothTime: 0.01
 --- !u!1 &431991111 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 28d592096e7e76148945c98658a6c011,
@@ -1288,6 +1288,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 5917c0e93d180a842b61d1ebc62a195c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 85992c2b80b2b4ba0bbb3e428b0c6965, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5917c0e93d180a842b61d1ebc62a195c, type: 3}
 --- !u!1 &1299669734
