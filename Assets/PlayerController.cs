@@ -82,6 +82,7 @@ public class PlayerController : MonoBehaviour {
 		currentSpeed = new Vector2 (controller.velocity.x, controller.velocity.z).magnitude;
 
 		if (controller.isGrounded) {
+			animator.SetBool ("jump", false);
 			velocityY = 0;
 		}
 
@@ -89,6 +90,7 @@ public class PlayerController : MonoBehaviour {
 
 	void Jump() {
 		if (controller.isGrounded) {
+			animator.SetBool ("jump", true);
 			float jumpVelocity = Mathf.Sqrt (-2 * gravity * jumpHeight);
 			velocityY = jumpVelocity;
 		}
