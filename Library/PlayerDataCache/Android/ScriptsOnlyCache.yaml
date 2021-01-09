@@ -1,10 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CanvasGameScript
+    - CollisionGameObjectExample
+    - CollisionTrigger
+    - EndTrigger
     - FixedJoystick
+    - GameManager
     - Joybutton
     - MainManu
     - MainManuScript
+    - OnPlayerHit
     - PlayerController
     - PlayerFollow
     Unity.Rider.Editor.dll:
@@ -15,6 +21,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -49,31 +63,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11230}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11252}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11866}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12230}
+      Script: {instanceID: 11896}
     - Class: 114
-      Script: {instanceID: 12452}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12466}
+      Script: {instanceID: 12486}
     - Class: 114
-      Script: {instanceID: 12656}
+      Script: {instanceID: 12500}
     - Class: 114
-      Script: {instanceID: 12718}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 12870}
+      Script: {instanceID: 12752}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 12888}
     - Class: 114
-      Script: {instanceID: 15920}
+      Script: {instanceID: 12906}
     - Class: 114
-      Script: {instanceID: 16260}
+      Script: {instanceID: 13110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,30 +144,54 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11230}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11252}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11392}
     - Class: 114
-      Script: {instanceID: 11840}
+      Script: {instanceID: 11868}
     - Class: 114
-      Script: {instanceID: 12076}
+      Script: {instanceID: 11894}
     - Class: 114
-      Script: {instanceID: 12522}
+      Script: {instanceID: 12054}
     - Class: 114
-      Script: {instanceID: 12718}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 13008}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 12264}
+    - Class: 114
+      Script: {instanceID: 12486}
+    - Class: 114
+      Script: {instanceID: 12556}
+    - Class: 114
+      Script: {instanceID: 12690}
+    - Class: 114
+      Script: {instanceID: 12752}
+    - Class: 114
+      Script: {instanceID: 13044}
+    - Class: 114
+      Script: {instanceID: 13110}
+    - Class: 114
+      Script: {instanceID: 41338}
+    - Class: 114
+      Script: {instanceID: 50220}
+    - Class: 114
+      Script: {instanceID: 50226}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 143
+      Script: {instanceID: 0}
+    - Class: 144
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -266,6 +304,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainManuScript
+  - hash:
+      serializedVersion: 2
       Hash: 234d407605354852c48e57df17c9a1c6
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -362,6 +406,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: c6fda83c8f11613c0888ef552e8ecfdc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollisionTrigger
+  - hash:
+      serializedVersion: 2
       Hash: 5cc439bf63c0539d39588e69465ac2ab
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -384,6 +434,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FloatingJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OnPlayerHit
   - hash:
       serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
@@ -420,6 +476,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 36e6de69bcd386353c298f1003a06056
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollisionGameObjectExample
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -542,6 +604,12 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainManu
+  - hash:
+      serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -572,7 +640,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 6bbc110f263b38ad315b2e8845492b7d
+      Hash: 37d0147f9d35d487891305a539aeade9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -659,13 +727,19 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MainManuScript
+    className: CanvasGameScript
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 3f66723dbdf486438ecbea76168498f0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MainManu
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8a71393b42520e40cbdad9195dade77c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndTrigger
   platform: 13
   scenePathNames:
   - Assets/MainMenu.unity
